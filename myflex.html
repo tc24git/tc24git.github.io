@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Fun</title>
+    <style>
+        /* Additional styles for fun */
+        .flex-item {
+            display: flex;
+            width: 100px;
+            height: 100px;
+            color: white;
+            font-size: 2em;
+            justify-content: center;
+            align-items: center;
+
+
+        }
+
+        .flex-container {
+            display: flex;
+            background-color: lightslategray;
+            flex-flow: row wrap;
+            justify-content: space-around;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            background-color: #333;
+            font-size: 24px;
+            color: white;
+            padding: 10px;
+        }
+
+        
+        .link-fix {
+            display: flex;
+            list-style: none;
+            text-decoration: none;
+            color: white;
+            flex-direction:row;
+            padding:10px;
+        }
+
+
+        @media (min-width: 600px) {
+
+            .flex-item {
+                color: gray;
+            }
+        }
+
+        @media (min-width: 900px) {
+
+            .flex-item {
+                color: purple;
+            }
+
+
+        }
+
+        .red {
+            background: tomato;
+        }
+
+        .blue {
+            background: dodgerblue;
+        }
+
+        .green {
+            background: mediumseagreen;
+        }
+
+        .orange {
+            background: orange;
+        }
+
+        .purple {
+            background: rebeccapurple;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>FlexBox practice</h1>
+        <nav class="navbar site-nav">
+            <div class="logo">MySite</div>
+            <ul class="link-fix nav-links">
+                <li><a class="link-fix" href="myflex.html">Flex</a></li>
+                <li><a class="link-fix" href="layout.html">Layout</a></li>
+                <li><a class="link-fix" href="about.html">About</a></li>
+            </ul>
+
+
+        </nav>
+    </header>
+    <main>
+        <section class="flex-container">
+            <div class="flex-item red">1</div>
+            <div class="flex-item blue">2</div>
+            <div class="flex-item green">3</div>
+            <div class="flex-item orange">4</div>
+            <div class="flex-item purple">5</div>
+        </section>
+    </main>
+    <footer>
+        <p>Do we need this?</p>
+    </footer>
+</body>
+
+</html>
