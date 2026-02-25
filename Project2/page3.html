@@ -103,9 +103,30 @@
 <body>
     <section class="container">
         <h1>Pack Your Bag</h1>
-        <p>Select the supplies you wish to take on your quest. 
-        Choose wisely, as you can only carry a limited amount.</p>
-        
+        <p>Select the supplies you wish to take on your quest. <br>
+            Choose wisely, as you can only carry a limited amount.</p>
+
+        <form action="page4.html" , type="get" , id="startingItemsForm">
+
+            <fieldset>
+            <input type="checkbox" , id="food" , name="starterItems" , value="food">
+            <label for="food"><strong>Food: </strong> Essential for energy. </label><br>
+
+            <input type="checkbox" , id="water" , name="starterItems" , value="water">
+            <label for="food"><strong>water: </strong> Hydration is key! </label><br>
+
+            <input type="checkbox" , id="mPots" , name="starterItems" , value="mPots">
+            <label for="mPots"><strong>Magic Potions: </strong> For health and magical energy. </label><br>
+
+            <input type="checkbox" , id="maps" , name="starterItems" , value="maps">
+            <label for="maps"><strong>Maps: </strong> Don't get lost in the wilderness! </label><br>
+
+            <input type="checkbox" , id="sword" , name="starterItems" , value="sword">
+            <label for="sword"><strong>Sword:</strong> Fend off those pesky foes! </label>
+
+            </fieldset>
+             <input type="submit", id="continueButton", name ="Cbutton1", value="Continue">
+        </form>
     </section>
 </body>
 
