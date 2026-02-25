@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Character Selection</title>
+    <!-- TODO: Import your CSS File here -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+
+        .supplies {
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            text-align: left;
+        }
+
+        /* label {
+    display: block;
+    margin: 5px;
+} */
+
+        select {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            width: 100%;
+            margin-top: 5px;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+
+        .character {
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        label {
+            cursor: pointer;
+        }
+
+        input[type=submit],
+        button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 30px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .stealth-option {
+            padding: 10px;
+            margin: 5px 0;
+            background-color: #f0f0f0;
+            cursor: pointer;
+            border: 2px solid #ddd;
+            text-align: center;
+        }
+
+        .stealth-option:hover {
+            background-color: #e8e8e8;
+        }
+    </style>
+
+</head>
+
+<body>
+    <section class="container">
+        <h1>Choose Your Character</h1>
+        <form action ="page3.html", type="get", id="characterForm">
+            <fieldset >
+                <legend>Choose Your Character</legend>
+
+                <input type ="radio", id="warrior", name="charType", value ="Aria, the Warrior">
+                <label for="warrior"><strong>Aria, the Warrior:</strong> 
+                Strong and brave, the ability to overcome physical obstacles. </label><br>
+
+                <input type ="radio", id="mage", name="charType", value ="Eldrin, the Mage">
+                <label for="mage"><strong>Eldrin, the Mage:</strong>
+                Wise and knowledgable, with the power to solve puzzles and cast spells. </label><br>
+
+                <input type ="radio", id="rogue", name="charTypr", value ="Tara, the Rogue">
+                <label for="rogue"><strong>Tara, the Rogue: </strong> 
+                Quick and cunning, with skills in stealth and persuasion.</label> 
+            </fieldset>
+            <input type="submit", id="continueButton", name ="Cbutton1", value="Continue">
+           
+        </form>
+    </section>
+</body>
+
+</html>
