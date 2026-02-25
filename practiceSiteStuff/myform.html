@@ -8,8 +8,17 @@
 <body>
      <button id = "button_A">Press Me</button>   
      <h3 id ="heading_A"> </h3>
+     <input id="textBox" type="text"/>
+     <div id = "output"></div>
 
      <script>
+
+    const textBox = document.querySelector("#textBox");
+    const output = document.querySelector("#output");
+        textBox.addEventListener("keydown", (event) =>
+            {output.textContent = `You pressed "${event.key}".`;});
+
+            
      const buttonA = document.querySelector("#button_A")
      const headingA = document.getElementById("heading_A")
 
