@@ -115,7 +115,17 @@
          </form>
          <p>Think carefully, for the correct asnwer will allow you passage.</p> 
  <script>
-
+const correctAnswer = "echo";
+ const ansInput = document.getElementById("riddleAnswer");
+ function buttonBehavior ( ansInput, correctAnswer ){
+        if(ansInput === correctAnswer){
+            document.getElementById("submitButton").style.backgroundColor = "green";
+            document.getElementById("submitButton").disabled = false;
+        } else {
+            document.getElementById("submitButton").disabled = true;
+        
+        }
+ }
  </script>       
 </body>
 
